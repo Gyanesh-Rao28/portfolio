@@ -1,9 +1,7 @@
 "use client";
 import { personalData } from "@/utils/data/personal-data";
-import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
@@ -25,7 +23,7 @@ export default function Home() {
               <br />
               {`I'm a `}
               <span className=" text-[#16f2b3] w-4/5">
-                <FlipWords words={words} className="text-[#16f2b3]" />
+                <FlipWords words={words} className="text-[#16f2b3] z-0" />
               </span>
             </h1>
 
