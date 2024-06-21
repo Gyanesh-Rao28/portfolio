@@ -32,3 +32,22 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+
+.rubik-400 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.herr-von-muellerhoff-regular {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sedgwick-ave-regular {
+  font-family: "Sedgwick Ave", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -4,8 +4,10 @@ export function Logo() {
   const words = [
     {
       text: "Gyanesh",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-white",
     },
   ];
-  return <TypewriterEffectSmooth words={words} className="sm:text-3xl" />;
+  return (
+    <TypewriterEffectSmooth words={words} className="sedgwick-ave-regular" />
+  );
 }

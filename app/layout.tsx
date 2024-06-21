@@ -27,6 +27,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
+      </head>
       <body>
         <PreLoader load={load} style={style} />
         <main className="min-h-screen absolute top-0 left-0 mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white ">

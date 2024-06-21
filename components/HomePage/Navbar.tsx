@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="bg-transparent">
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center">
-          <Link href="/" className=" text-white text-3xl font-bold">
+          <Link href="/" className=" text-white text-3xl font-bold ">
             <Logo/>
           </Link>
         </div>
