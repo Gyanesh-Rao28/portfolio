@@ -13,7 +13,7 @@ interface PreLoaderProps {
 const PreLoader = ({ load, style }: PreLoaderProps) => {
   return (
     <>
-      <div style={style} className={`preloader ${load ? "visible" : "hidden"}`}>
+      <div style={style} className={`preloader ${load ? "visible" : "hidden"} h-screen  `}>
         <div className="absolute z-10 h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
           <h1 className="md:text-7xl text-4xl lg:text-9xl font-bold text-center text-white relative z-20">
             Gyanesh

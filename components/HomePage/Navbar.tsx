@@ -1,5 +1,6 @@
 // @flow strict
 import Link from "next/link";
+import { Logo } from "../logo";
 
 function Navbar() {
   return (
@@ -7,7 +8,7 @@ function Navbar() {
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center">
           <Link href="/" className=" text-white text-3xl font-bold">
-            S Gyanesh Rao
+            <Logo/>
           </Link>
         </div>
 
