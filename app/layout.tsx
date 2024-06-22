@@ -1,8 +1,8 @@
 'use client'
 import "./globals.css";
-import Navbar from "@/components/homePage/Navbar";
 import React, { useState, useEffect } from "react";
 import PreLoader from "@/components/preLoader";
+import Navbar from "@/components/homePage/Navbar";
 
 export default function RootLayout({
   children,
