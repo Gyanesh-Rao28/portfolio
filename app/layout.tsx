@@ -2,7 +2,7 @@
 import "./globals.css";
 import React, { useState, useEffect } from "react";
 import PreLoader from "@/components/preLoader";
-import Navbar from "@/components/homePage/Navbar";
+import Navbar from "@/components/Home/NavBar";
 
 export default function RootLayout({
   children,

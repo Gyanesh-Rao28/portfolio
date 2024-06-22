@@ -9,7 +9,7 @@ import { SiLeetcode } from "react-icons/si";
 import { FlipWords } from "@/components/ui/flip-words";
 
 const HeroSection = () => {
-    const words = ["Software-Developer", "Full-Stack-Developer"];
+  const words = ["Software-Developer", "Full-Stack-Developer"];
   return (
     <>
       <section className="relative  flex flex-col-reverse  items-center justify-between py-4 lg:py-12">
