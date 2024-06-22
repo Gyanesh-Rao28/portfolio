@@ -4,69 +4,15 @@ import SectionTitle from "../sectionTitle";
 import { skillsData } from "@/utils/data/skill";
 import { skillsImage } from "@/utils/skill-image";
 import Image from "next/image";
-import Marquee from "react-fast-marquee";
+import { HoverEffect } from "../ui/card-hover-effect";
+
+
 const Skill = () => {
   return (
     <>
-      <div
-        id="skills"
-        className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
-      >
-        <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
-
-        <div className="flex justify-center -translate-y-[1px]">
-          <div className="w-3/4">
-            <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
-          </div>
-        </div>
-
-        <div className="flex justify-center my-5 lg:py-8">
-          <div className="flex  items-center">
-            <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-            <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-              Skills
-            </span>
-            <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          </div>
-        </div>
-
-        <div className="w-full my-12">
-          <Marquee
-            gradient={false}
-            speed={80}
-            pauseOnHover={true}
-            pauseOnClick={true}
-            delay={0}
-            play={true}
-            direction="left"
-          >
-            {skillsData.map((skill, id) => (
-              <div
-                className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
-                key={id}
-              >
-                <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
-                  <div className="flex -translate-y-[1px] justify-center">
-                    <div className="w-3/4">
-                      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-center gap-3 p-6">
-                    <div className="h-8 sm:h-10">
-                      <Image
-                        src={skillsImage(skill)?.src}
-                        alt={skill}
-                        width={40}
-                        height={40}
-                        className="h-full w-auto rounded-lg"
-                      />
-                    </div>
-                    <p className="text-white text-sm sm:text-lg">{skill}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Marquee>
+      <div className="w-full relative flex flex-col">
+        <div className="max-w-5xl mx-auto px-8">
+          <HoverEffect items={projects} />
         </div>
       </div>
     </>
@@ -74,3 +20,52 @@ const Skill = () => {
 };
 
 export default Skill;
+
+const projects = [
+  {
+    title: "Stripe",
+    description:
+      "A technology company that builds economic infrastructure for the internet.",
+    link: "https://stripe.com",
+  },
+  {
+    title: "Netflix",
+    description:
+      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+    link: "https://netflix.com",
+  },
+  {
+    title: "Google",
+    description:
+      "A multinational technology company that specializes in Internet-related services and products.",
+    link: "https://google.com",
+  },
+  {
+    title: "Meta",
+    description:
+      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+    link: "https://meta.com",
+  },
+  {
+    title: "Amazon",
+    description:
+      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+    link: "https://amazon.com",
+  },
+  {
+    title: "Microsoft",
+    description:
+      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+    link: "https://microsoft.com",
+  },
+];
+
+
+//  <Image
+//    src={skillsImage(skill)?.src}
+//    alt={skill}
+//    width={40}
+//    height={40}
+//    className="h-full w-auto rounded-lg"
+//  />;
+{/* <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-1/2 transform -translate-x-1/2 filter blur-3xl opacity-20"></div>; */}
