@@ -1,22 +1,72 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import SectionTitle from "../sectionTitle";
-import { SkillData } from "@/utils/data/skill";
-
-
+import { skillsData } from "@/utils/data/skill";
+import { skillsImage } from "@/utils/skill-image";
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
 const Skill = () => {
   return (
     <>
-      <div>
-        <SectionTitle title="Skills" />
-        <div className="h-5/6 my-20 rounded-md flex flex-col antialiased bg-transparent dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-          <InfiniteMovingCards
-            items={SkillData}
-            direction="right"
-            speed="slow"
-          />
+      <div
+        id="skills"
+        className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
+      >
+        <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
+
+        <div className="flex justify-center -translate-y-[1px]">
+          <div className="w-3/4">
+            <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+          </div>
+        </div>
+
+        <div className="flex justify-center my-5 lg:py-8">
+          <div className="flex  items-center">
+            <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+            <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
+              Skills
+            </span>
+            <span className="w-24 h-[2px] bg-[#1a1443]"></span>
+          </div>
+        </div>
+
+        <div className="w-full my-12">
+          <Marquee
+            gradient={false}
+            speed={80}
+            pauseOnHover={true}
+            pauseOnClick={true}
+            delay={0}
+            play={true}
+            direction="left"
+          >
+            {skillsData.map((skill, id) => (
+              <div
+                className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
+                key={id}
+              >
+                <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
+                  <div className="flex -translate-y-[1px] justify-center">
+                    <div className="w-3/4">
+                      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center justify-center gap-3 p-6">
+                    <div className="h-8 sm:h-10">
+                      <Image
+                        src={skillsImage(skill)?.src}
+                        alt={skill}
+                        width={40}
+                        height={40}
+                        className="h-full w-auto rounded-lg"
+                      />
+                    </div>
+                    <p className="text-white text-sm sm:text-lg">{skill}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Marquee>
         </div>
       </div>
     </>
@@ -24,53 +74,3 @@ const Skill = () => {
 };
 
 export default Skill;
-
-const testimonials = [
-  {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
-  },
-  {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
-  },
-  {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
-  {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
-  },
-];
