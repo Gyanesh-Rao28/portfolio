@@ -11,8 +11,8 @@ export default function Home() {
    <HeroSection/>
    <AboutMe/>
    <Experience/>
-   {/* <Skill/>  */}
-  <Projects/>
+   <Skill/> 
+  {/* <Projects/> */}
    </>
   );
 }

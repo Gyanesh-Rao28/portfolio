@@ -28,11 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
-
+        <link
+          href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </head>
       <body>
         <PreLoader load={load} style={style} />
@@ -40,6 +42,8 @@ export default function RootLayout({
           <Navbar />
           {children}
         </main>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
       </body>
     </html>
   );
