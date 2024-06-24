@@ -38,50 +38,50 @@ import { FaJava } from "react-icons/fa";
 
 export const skillData = {
     "sections": [
-        {
-            "title": "Frontend Development",
-            "items": [
-                {"skill": "HTML", "icon": React.createElement(FaHtml5)},
-                { "skill": "Tailwind", "icon": React.createElement(RiTailwindCssFill) },
-                { "skill": "JavaScript", "icon": React.createElement(IoLogoJavascript)},
-                { "skill": "TypeScript", "icon": React.createElement(SiTypescript) },
-                { "skill": "React", "icon": React.createElement(FaReact)},
-                { "skill": "Nextjs", "icon": React.createElement(RiNextjsFill) },
-            ]
-        },
-        {
-            "title": "Backend Development",
-            "items": [
-                { "skill": "Nodejs", "icon": React.createElement(FaNodeJs) },
-                { "skill": "Express", "icon": React.createElement(SiExpress) },
-                { "skill": "Mongodb", "icon": React.createElement(SiMongodb) },
-                { "skill": "Mysql", "icon": React.createElement(SiMysql) },
-                { "skill": "Postgresql", "icon": React.createElement(BiLogoPostgresql) },
-                { "skill": "Prisma", "icon": React.createElement(SiPrisma) },
-                { "skill": "Docker", "icon": React.createElement(FaDocker) }
-            ]
-        },
-        {
-            "title": "Lagungaes",
-            "items": [
-                { "skill": "CPP", "icon": React.createElement(PiFileCppFill) },
-                { "skill": "Phthon", "icon": React.createElement(FaPython) },
-                { "skill": "JavaScript", "icon": React.createElement(IoLogoJavascript) },
-                { "skill": "Java", "icon": React.createElement(FaJava) },
-            ]
-        },
-        {
-            "title": "Tool & Platform",
-            "items": [
-                { "skill": "VsCode", "icon": React.createElement(VscVscode) },
-                { "skill": "GitHub", "icon": React.createElement(FaGithub) },
-                { "skill": "Git", "icon": React.createElement(FaGitAlt) },
-                { "skill": "Vercel", "icon": React.createElement(IoLogoVercel) },
-                { "skill": "Firebase", "icon": React.createElement(IoLogoFirebase) },
-                { "skill": "AWS", "icon": React.createElement(FaAws) },
-                { "skill": "SocketIo", "icon": React.createElement(TbBrandSocketIo) },
-                { "skill": "Stripe", "icon": React.createElement(FaStripe) }
-            ]
-        }
-    ]
+    {
+    "title": "Lagungaes",
+        "items": [
+            { "skill": "CPP", "icon": React.createElement(PiFileCppFill) },
+            { "skill": "Phthon", "icon": React.createElement(FaPython) },
+            { "skill": "JavaScript", "icon": React.createElement(IoLogoJavascript) },
+            { "skill": "Java", "icon": React.createElement(FaJava) },
+        ]
+},
+    {
+        "title": "Frontend Development",
+        "items": [
+            { "skill": "HTML", "icon": React.createElement(FaHtml5) },
+            { "skill": "Tailwind", "icon": React.createElement(RiTailwindCssFill) },
+            { "skill": "JavaScript", "icon": React.createElement(IoLogoJavascript) },
+            { "skill": "TypeScript", "icon": React.createElement(SiTypescript) },
+            { "skill": "React", "icon": React.createElement(FaReact) },
+            { "skill": "Nextjs", "icon": React.createElement(RiNextjsFill) },
+        ]
+    },
+    {
+        "title": "Backend Development",
+        "items": [
+            { "skill": "Nodejs", "icon": React.createElement(FaNodeJs) },
+            { "skill": "Express", "icon": React.createElement(SiExpress) },
+            { "skill": "Mongodb", "icon": React.createElement(SiMongodb) },
+            { "skill": "Mysql", "icon": React.createElement(SiMysql) },
+            { "skill": "Postgresql", "icon": React.createElement(BiLogoPostgresql) },
+            { "skill": "Prisma", "icon": React.createElement(SiPrisma) },
+            { "skill": "Docker", "icon": React.createElement(FaDocker) }
+        ]
+    },
+    {
+        "title": "Tool & Platform",
+        "items": [
+            { "skill": "VsCode", "icon": React.createElement(VscVscode) },
+            { "skill": "GitHub", "icon": React.createElement(FaGithub) },
+            { "skill": "Git", "icon": React.createElement(FaGitAlt) },
+            { "skill": "Vercel", "icon": React.createElement(IoLogoVercel) },
+            { "skill": "Firebase", "icon": React.createElement(IoLogoFirebase) },
+            { "skill": "AWS", "icon": React.createElement(FaAws) },
+            { "skill": "SocketIo", "icon": React.createElement(TbBrandSocketIo) },
+            { "skill": "Stripe", "icon": React.createElement(FaStripe) }
+        ]
+    }
+]
 }
