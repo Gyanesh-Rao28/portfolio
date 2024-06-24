@@ -42,8 +42,9 @@ export const skillData = {
     "title": "Lagungaes",
         "items": [
             { "skill": "CPP", "icon": React.createElement(PiFileCppFill) },
-            { "skill": "Phthon", "icon": React.createElement(FaPython) },
+            { "skill": "Python", "icon": React.createElement(FaPython) },
             { "skill": "JavaScript", "icon": React.createElement(IoLogoJavascript) },
+            { "skill": "TypeScript", "icon": React.createElement(SiTypescript) },
             { "skill": "Java", "icon": React.createElement(FaJava) },
         ]
 },
