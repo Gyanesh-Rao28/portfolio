@@ -8,7 +8,7 @@ import { SiLeetcode } from "react-icons/si";
 
 import { FlipWords } from "@/components/ui/flip-words";
 
-const HeroSection = () => { 
+const HeroSection = () => {
   const words = ["Software-Developer", "Full-Stack-Developer"];
   return (
     <>

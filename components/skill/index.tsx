@@ -26,7 +26,7 @@ const Skill = () => {
                     className="flex w-40 justify-around gap-2.5 mb-6"
                     key={idx}
                   >
-                    <div data-aos="zoom-in">
+                    <div >
                       <h3>{item.skill}</h3>
                       <div
                         className="mx-auto h-4 w-4 mt-4 text-emerald-400"

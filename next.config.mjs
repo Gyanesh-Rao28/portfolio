@@ -6,7 +6,8 @@ const nextConfig = {
             "utfs.io",
             "tailwindui.com",
             "cdn.discordapp.com",
-            "picsum.photos"
+            "picsum.photos",
+            "plus.unsplash.com"
         ]
     }
 };
