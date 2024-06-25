@@ -26,7 +26,7 @@ export const BentoGridItem = ({
   description,
   header,
   icon,
-  tools,
+  tools=[],
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -59,7 +59,7 @@ export const BentoGridItem = ({
       </div>
       {/* populate the tech-stack */}
       <div className="flex flex-row items-center justify-start w-full">
-        {/* <AnimatedTooltip items={tools} /> */}
+        <AnimatedTooltip items={tools} />
       </div>
     </div>
   );
