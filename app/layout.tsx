@@ -18,7 +18,7 @@ export default function RootLayout({
       setStyle({ opacity: 0 });
       setTimeout(() => {
         updateLoad(false);
-      }, 500); // This should match the CSS transition time
+      }, 500);
     }, 2000);
 
     return () => clearTimeout(timer);

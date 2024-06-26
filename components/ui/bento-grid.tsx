@@ -49,16 +49,16 @@ export const BentoGridItem = ({
       )}
     >
       <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl">
-        <Image src={imgSrc} alt="images" className="object-cover"/>
+        <Image src={imgSrc} alt="images" className="object-cover" />
       </div>
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         <a href={gitHubLink}>
           <FaGithub className="h-6 w-6 transition-transform duration-300 hover:scale-110 hover:text-emerald-400" />
         </a>
-        <div className="font-sans font-bold text-violet-500 mb-2 mt-2 flex w-full">
+        <div className="font-sans font-bold text-white  mb-2 mt-2 flex w-full">
           {title}
         </div>
-        <div className="font-sans font-normal text-violet-500 text-xs ">
+        <div className="font-sans font-normal text-white text-xs ">
           {description}
         </div>
       </div>

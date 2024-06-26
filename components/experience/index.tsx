@@ -7,7 +7,7 @@ import { cn } from "@/utils/cn";
 const Experience = () => {
   return (
     <>
-      <div className="w-full relative">
+      <div className="w-full relative" id="experience">
         <SectionTitle title="Experience" />
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical my-16">
           {experiencesData.map((item, ind) => (
