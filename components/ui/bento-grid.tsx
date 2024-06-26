@@ -1,5 +1,7 @@
 import { cn } from "@/utils/cn";
 import { AnimatedTooltip } from "./animated-tooltip";
+import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 export const BentoGrid = ({
   className,
@@ -24,40 +26,42 @@ export const BentoGridItem = ({
   className,
   title,
   description,
-  header,
-  icon,
-  tools=[],
+  imgSrc,
+  gitHubLink,
+  tools = [],
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  header?: React.ReactNode;
-  icon?: React.ReactNode;
+  imgSrc?: any;
+  gitHubLink?: string;
   tools?: {
     id: number;
     name: string;
-    image: string;
+    toolIcon: string;
   }[];
 }) => {
-  console.log(tools)
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent justify-between flex flex-col space-y-4",
+        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 bg-[#0d1224] border border-transparent justify-between flex flex-col space-y-4",
         className
       )}
     >
-      {header}
+      <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl">
+        <Image src={imgSrc} alt="images" className="object-cover"/>
+      </div>
       <div className="group-hover/bento:translate-x-2 transition duration-200">
-        {icon}
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2">
+        <a href={gitHubLink}>
+          <FaGithub className="h-6 w-6 transition-transform duration-300 hover:scale-110 hover:text-emerald-400" />
+        </a>
+        <div className="font-sans font-bold text-violet-500 mb-2 mt-2 flex w-full">
           {title}
         </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+        <div className="font-sans font-normal text-violet-500 text-xs ">
           {description}
         </div>
       </div>
-      {/* populate the tech-stack */}
       <div className="flex flex-row items-center justify-start w-full">
         <AnimatedTooltip items={tools} />
       </div>

@@ -3,7 +3,6 @@
 import SectionTitle from "../sectionTitle";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import { ProjectsData } from "@/utils/data/project-data";
-
 const Projects = () => {
   return (
     <>
@@ -15,8 +14,8 @@ const Projects = () => {
               key={i}
               title={item.title}
               description={item.description}
-              header={item.header}
-              icon={item.icon}
+              imgSrc={item.imgSrc}
+              gitHubLink={item.gitHubLink}
               tools={item.tools}
               className={i === 3 || i === 6 ? "md:col-span-2" : ""}
             />
