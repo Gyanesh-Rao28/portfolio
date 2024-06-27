@@ -25,8 +25,12 @@ const Education = () => {
             </div>
 
             <div className="flex flex-col gap-6">
-              {EducationData.map((education) => (
-                <div className="p-3 relative text-white border border-gray-300 rounded-3xl">
+              {EducationData.map((education, ind) => (
+
+                <div
+                  key={ind}
+                  className="p-3 relative text-white border border-gray-300 rounded-3xl"
+                >
                   <div className="flex justify-center">
                     <p className="text-xs sm:text-sm text-[#16f2b3]">
                       {education.duration}
@@ -46,6 +50,7 @@ const Education = () => {
                     </div>
                   </div>
                 </div>
+
               ))}
             </div>
           </div>

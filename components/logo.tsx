@@ -3,11 +3,9 @@ import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 export function Logo() {
   const words = [
     {
-      text: "Gyanesh",
+      text: "SGR.",
       className: "text-white",
     },
   ];
-  return (
-    <TypewriterEffectSmooth words={words} className="sedgwick-ave-regular" />
-  );
+  return <TypewriterEffectSmooth words={words} className="arimo-600" />;
 }
