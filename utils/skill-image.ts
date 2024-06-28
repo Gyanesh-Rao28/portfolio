@@ -29,10 +29,16 @@ import tensorflow from '@/public/svg/skils/tensorflow.svg';
 import typescript from '@/public/svg/skils/typescript.svg';
 import vitejs from '@/public/svg/skils/vitejs.svg';
 import prisma from '@/public/svg/skils/prisma.svg';
+import matlab from '@/public/svg/skils/matlab.svg';
+import socketio from '@/public/svg/skils/socketio.svg';
 
 export const skillsImage = (skill: string) => {
     const skillID = skill.toLowerCase();
     switch (skillID) {
+        case 'sockectio':
+            return socketio;
+        case 'matlab':
+            return matlab;
         case 'prisma':
             return prisma;
         case 'html':

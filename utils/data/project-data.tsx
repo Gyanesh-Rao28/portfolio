@@ -3,7 +3,9 @@ import { SiGithub } from "react-icons/si";
 
 import smartVerify from "@/public/imgs/projects//smartVerify.png";
 import petify from "@/public/imgs/projects/petify.png";
-import rentalSystem from "@/public/imgs/projects/rentalSystem.png";
+import libSystem from "@/public/imgs/projects/rentalSystem.png";
+import dmd from "@/public/imgs/projects/dmd.png";
+import discord from "@/public/imgs/projects/discordClone.png";
 
 const Skeleton = () => (
   <div className="flex flex-1 w-full h-full rounded-xl bg-emerald-400">
@@ -76,16 +78,35 @@ export const ProjectsData = [
     ],
   },
   {
-    title: "Car Rental System",
+    title: "Dynamic Mode Decomposition",
     description:
-      "A realtime car rental system. Enpowered with C++ and MySql database. Mickis the rental system model. ",
-    imgSrc: rentalSystem,
+      "DMD is particularly useful when fundamental patterns are too complex for conventional mathematical methods to fully understand.",
+    imgSrc: dmd,
     gitHubLink: "https://github.com/Gyanesh-Rao28/Dynamic_mode_decomposition",
     tools: [
       {
         id: 1,
-        name: "CPP",
-        toolIcon: "c++",
+        name: "Python",
+        toolIcon: "python",
+      },
+      {
+        id: 2,
+        name: "MATLAB",
+        toolIcon: "matlab",
+      },
+    ],
+  },
+  {
+    title: "Library Mangement System",
+    description:
+      "Redesigned the Library Management System’s User Interface, engineering an intuitive and user-friendly experience",
+    imgSrc: libSystem,
+    gitHubLink: "https://github.com/Gyanesh-Rao28/LibraryManagementSystem",
+    tools: [
+      {
+        id: 1,
+        name: "JAVA",
+        toolIcon: "java",
       },
       {
         id: 2,
@@ -95,30 +116,11 @@ export const ProjectsData = [
     ],
   },
   {
-    title: "Car Rental System",
+    title: "Discord Clone",
     description:
-      "A realtime car rental system. Enpowered with C++ and MySql database. Mickis the rental system model. ",
-    imgSrc: rentalSystem,
-    gitHubLink: "https://github.com/Gyanesh-Rao28/Dynamic_mode_decomposition",
-    tools: [
-      {
-        id: 1,
-        name: "CPP",
-        toolIcon: "c++",
-      },
-      {
-        id: 2,
-        name: "MySql",
-        toolIcon: "mysql",
-      },
-    ],
-  },
-  {
-    title: "Petify",
-    description:
-      "A web application for abandon pets. That provides adopt and donate features.",
-    imgSrc: petify,
-    gitHubLink: "https://github.com/Gyanesh-Rao28/Petify",
+      "A web application that mimics Discord's features, such as chatting and conference calls.",
+    imgSrc: discord,
+    gitHubLink: "https://github.com/Gyanesh-Rao28/Discord_Clone",
     tools: [
       {
         id: 1,
@@ -137,8 +139,13 @@ export const ProjectsData = [
       },
       {
         id: 4,
-        name: "MongoDB",
-        toolIcon: "mongodb",
+        name: "MySql",
+        toolIcon: "mysql",
+      },
+      {
+        id: 5,
+        name: "SocketIO",
+        toolIcon: "sockectio",
       },
     ],
   },
