@@ -6,29 +6,20 @@ import { LuGraduationCap } from "react-icons/lu";
 export const experiencesData = [
     {
         title: "E-sports Manager",
-        location: "SRM University",
+        location: "SRM University AP",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+            "I managed SRM esports events in various fests, showcasing my skills in team leadership and time management.",
         icon: React.createElement(LuGraduationCap),
         date: "2021-2024",
         algin:"timeline-start"
     },
     {
-        title: "Front-End Developer NTL",
-        location: "Orlando, FL",
+        title: "Full Stack Developer NTL",
+        location: "SRM University AP",
         description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "Collaborated in a student-led laboratory environment to foster the development of innovative ideas and engage in interdisciplinary collaboration, enhancing productivity and cross-functional understanding.",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "2023 - 2024",
         algin: "timeline-end"
-    },
-    {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
-        description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "2021 - present",
-        algin: "timeline-start"
     },
 ] as const;
